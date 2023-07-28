@@ -5,6 +5,17 @@
     <title>Title</title>
 </head>
 <body>
+<form th:action="@{/customer/search}" method="post">
+    <div class="input-group">
+        <div class="form-outline">
+            <input type="search" name="search" id="search" class="form-control" />
+            <label class="form-label" for="search">Search</label>
+        </div>
+        <button type="submit" class="btn btn-primary" >
+            <i class="fas fa-search"></i>
+        </button>
+    </div>
+</form>
 <a th:href="@{/customer/create}">Create</a>
 <table border="1">
     <tr>

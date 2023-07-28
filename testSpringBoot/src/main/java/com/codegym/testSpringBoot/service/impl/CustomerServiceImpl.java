@@ -38,4 +38,10 @@ public class CustomerServiceImpl implements CustomerService {
     public void delete(Long id) {
          customerRepository.deleteById(id);
     }
+
+    @Override
+    public List<Customer> searchByName(String name) {
+
+        return customerRepository.findByNameLike("%"+name+"%");
+    }
 }
