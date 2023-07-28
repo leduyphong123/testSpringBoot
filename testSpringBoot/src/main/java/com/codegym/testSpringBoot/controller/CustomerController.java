@@ -53,9 +53,9 @@ public class CustomerController {
         List<Customer> customerList = customerService.searchByName(search);
         return new ModelAndView("index","customerList",customerList);
     }
-    @PostMapping("/search")
-    public ModelAndView searchPost(@RequestParam String search){
-        List<Customer> customerList = customerService.searchByName(search);
-        return new ModelAndView("index","customerList",customerList);
-    }
+//    @PostMapping("/search")
+//    public ModelAndView searchPost(@RequestParam String search){
+//        List<Customer> customerList = customerService.searchByName(search);
+//        return new ModelAndView("index","customerList",customerList);
+//    }
 }
